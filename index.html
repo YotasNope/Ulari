@@ -1,0 +1,21 @@
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.16.1/phaser.min.js"></script>
+<script src="menu.js"></script>
+<script src="n1.js"></script>
+<script src="controls.js"></script>
+<script src="gameover.js"></script>
+<script src="win.js"></script>
+<title>Ulari The lost kingdom</title>
+<script>
+
+var game = new Phaser.Game(1200, 850, Phaser.CANVAS, 'phaser-example');
+
+game.state.add("n1", n1);
+game.state.add("controls", controls);
+game.state.add("menu", menu);
+game.state.add("gameover", gameover);
+game.state.add("win", win);
+game.state.start("menu", menu);
+
+
+</script>
